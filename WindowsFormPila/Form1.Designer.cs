@@ -41,10 +41,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(154, 19);
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(169, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
+            this.label1.Size = new System.Drawing.Size(63, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "PILA";
             // 
@@ -57,35 +57,44 @@
             // 
             // btnapilar
             // 
+            this.btnapilar.BackColor = System.Drawing.Color.Lime;
+            this.btnapilar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnapilar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnapilar.Location = new System.Drawing.Point(240, 64);
+            this.btnapilar.ForeColor = System.Drawing.Color.White;
+            this.btnapilar.Location = new System.Drawing.Point(245, 59);
             this.btnapilar.Name = "btnapilar";
             this.btnapilar.Size = new System.Drawing.Size(127, 36);
             this.btnapilar.TabIndex = 2;
             this.btnapilar.Text = "APILAR";
-            this.btnapilar.UseVisualStyleBackColor = true;
+            this.btnapilar.UseVisualStyleBackColor = false;
             this.btnapilar.Click += new System.EventHandler(this.btnapilar_Click);
             // 
             // btndesapilar
             // 
+            this.btndesapilar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btndesapilar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndesapilar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndesapilar.Location = new System.Drawing.Point(240, 106);
+            this.btndesapilar.ForeColor = System.Drawing.Color.White;
+            this.btndesapilar.Location = new System.Drawing.Point(245, 101);
             this.btndesapilar.Name = "btndesapilar";
             this.btndesapilar.Size = new System.Drawing.Size(127, 36);
             this.btndesapilar.TabIndex = 2;
             this.btndesapilar.Text = "DESAPILAR";
-            this.btndesapilar.UseVisualStyleBackColor = true;
+            this.btndesapilar.UseVisualStyleBackColor = false;
             this.btndesapilar.Click += new System.EventHandler(this.btndesapilar_Click);
             // 
             // btnvaciarpila
             // 
+            this.btnvaciarpila.BackColor = System.Drawing.Color.Teal;
+            this.btnvaciarpila.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnvaciarpila.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnvaciarpila.Location = new System.Drawing.Point(240, 148);
+            this.btnvaciarpila.ForeColor = System.Drawing.Color.White;
+            this.btnvaciarpila.Location = new System.Drawing.Point(245, 143);
             this.btnvaciarpila.Name = "btnvaciarpila";
             this.btnvaciarpila.Size = new System.Drawing.Size(127, 36);
             this.btnvaciarpila.TabIndex = 2;
             this.btnvaciarpila.Text = "VACIAR PILA";
-            this.btnvaciarpila.UseVisualStyleBackColor = true;
+            this.btnvaciarpila.UseVisualStyleBackColor = false;
             this.btnvaciarpila.Click += new System.EventHandler(this.btnvaciarpila_Click);
             // 
             // pilacontenedora
@@ -93,7 +102,7 @@
             this.pilacontenedora.FormattingEnabled = true;
             this.pilacontenedora.Location = new System.Drawing.Point(42, 116);
             this.pilacontenedora.Name = "pilacontenedora";
-            this.pilacontenedora.Size = new System.Drawing.Size(171, 160);
+            this.pilacontenedora.Size = new System.Drawing.Size(160, 160);
             this.pilacontenedora.TabIndex = 3;
             // 
             // label2
@@ -110,7 +119,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(44, 98);
+            this.label3.Location = new System.Drawing.Point(43, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 15);
             this.label3.TabIndex = 4;
@@ -130,6 +139,7 @@
             this.Controls.Add(this.txtnumero);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PILA";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
