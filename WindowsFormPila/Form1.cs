@@ -31,6 +31,7 @@ namespace WindowsFormPila
                 int dato = int.Parse(this.txtnumero.Text);
                 pila.ApilarPila(dato);
                 listarpila();
+                MostrarDatos();
 
             }
             else
@@ -46,12 +47,14 @@ namespace WindowsFormPila
         {
             pila.DesapilarPila();
             listarpila();
+            MostrarDatos();
 
         }
 
         private void btnvaciarpila_Click(object sender, EventArgs e)
         {
             pila.VaciarPila();
+            MostrarDatos();
             this.pilacontenedora.Items.Clear();
         }
         public void listarpila()
@@ -66,6 +69,17 @@ namespace WindowsFormPila
                 }
                 
             }
+        }
+        public void MostrarDatos()
+        {
+            lblpares.Text=pila.ContarElementosPares().ToString();
+            lblimpares.Text = pila.ContarElementosImpares().ToString();
+            lblpromedio.Text = pila.PromedioELementos().ToString();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

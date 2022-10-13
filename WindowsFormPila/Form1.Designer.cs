@@ -36,6 +36,12 @@
             this.pilacontenedora = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblpares = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblimpares = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblpromedio = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -125,11 +131,75 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Lista Pila";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(43, 291);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(143, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Cant. ELementos Pares:";
+            // 
+            // lblpares
+            // 
+            this.lblpares.AutoSize = true;
+            this.lblpares.Location = new System.Drawing.Point(186, 291);
+            this.lblpares.Name = "lblpares";
+            this.lblpares.Size = new System.Drawing.Size(13, 13);
+            this.lblpares.TabIndex = 5;
+            this.lblpares.Text = "0";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(44, 311);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(128, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Cant. Elem. Impares: ";
+            // 
+            // lblimpares
+            // 
+            this.lblimpares.AutoSize = true;
+            this.lblimpares.Location = new System.Drawing.Point(173, 311);
+            this.lblimpares.Name = "lblimpares";
+            this.lblimpares.Size = new System.Drawing.Size(13, 13);
+            this.lblimpares.TabIndex = 5;
+            this.lblimpares.Text = "0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(44, 333);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Promedio Elementos:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // lblpromedio
+            // 
+            this.lblpromedio.AutoSize = true;
+            this.lblpromedio.Location = new System.Drawing.Point(175, 333);
+            this.lblpromedio.Name = "lblpromedio";
+            this.lblpromedio.Size = new System.Drawing.Size(13, 13);
+            this.lblpromedio.TabIndex = 5;
+            this.lblpromedio.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 355);
+            this.Controls.Add(this.lblpromedio);
+            this.Controls.Add(this.lblimpares);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblpares);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pilacontenedora);
@@ -157,6 +227,12 @@
         private System.Windows.Forms.ListBox pilacontenedora;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblpares;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblimpares;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblpromedio;
     }
 }
 

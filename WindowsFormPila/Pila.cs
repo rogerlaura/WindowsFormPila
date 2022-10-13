@@ -82,9 +82,57 @@ namespace WindowsFormPila
                 MessageBox.Show("LA PILA ESTA VACIA");
             }
         }
+        //
         public int[] ElemetosPila()
         {
             return this.contenedorpila;
+        }
+        public int ContarElementosPares()
+        {
+            int cantidad=0;
+            for(int i=0; i<=this.tope; i++)
+            {
+                if (this.contenedorpila[i] % 2 == 0)
+                {
+                    cantidad++;
+                }
+                
+            }
+            return cantidad;
+
+        }
+        public int ContarElementosImpares()
+        {
+            int contatidad = 0;
+            for (int i = 0; i <= this.tope; i++)
+            {
+                if (this.contenedorpila[i] % 2 == 1)
+                {
+                    contatidad++;
+                }
+
+            }
+            return contatidad;
+
+        }
+        public int PromedioELementos()
+        {
+            int suma = 0;
+            for (int i = 0; i <= this.tope; i++)
+            {
+                suma += this.contenedorpila[i];
+
+            }
+            if (this.tope == -1)
+            {
+                return 0;
+            }
+            else
+            {
+                return suma / (tope + 1);
+            }
+           
+
         }
 
     }
